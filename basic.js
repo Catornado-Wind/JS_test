@@ -42,3 +42,63 @@ console.log(language.includes("Java"))
 // use string literals
 console.log(`Imagine not knowing this is ${language.includes("Java")}`)
 
+let age = parseInt(prompt("Please enter your age: "));
+
+if (age <= 12){
+    console.log("Kid");
+}
+else if (age <= 18){
+    console.log("Teen");
+}
+else{
+    console.log("Adult");
+}
+
+fruits = ["apple", "banana", "coconut"];
+for(let i = 0; i < fruits.length; i++){
+    console.log(fruits[i]);
+}
+
+for (let fruit of fruits){
+    console.log(fruits);
+}
+
+let counter = 10;
+while (counter > 0){
+    console.log(counter);
+    counter--;
+}
+
+let numbers = [123, 12.4, -1];
+let schools = ["RI", "TMJC", "ASR", "VJ"];
+let mixed = [3, "L", true];
+
+console.log(numbers[0])
+console.log(schools.length)
+
+schools.push("HCI")
+console.log(schools)
+schools.pop()
+console.log(schools)
+
+// object (basically dict in Python)
+let person = {
+    firstName: "Ben",
+    lastName: "Bigger",
+    age: 26,
+    isStudent: false,
+};
+
+person["age"] = 27;
+console.log(person.age);
+
+
+// Function
+function cube(x){
+    return x ** 3;
+}
+
+// arrow function
+let magnitude = (x, y, z) => Math.sqrt(x**2 + y**2 + z**2);
+
+console.log(magnitude(1, 2, 3))
